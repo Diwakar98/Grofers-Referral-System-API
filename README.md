@@ -28,8 +28,6 @@ API for Referral System
   - We make an assumption that the referral code being generated using the referral code generator is always unique. Although we can extend the implementation to always make a unique referral code.
   - The code runs on a local machine. Although the database we are using if Google’ FIrebase database and it is a global realtime database. We can deploy the code on a server to access globally.
 
-### `Note: Focused mostly on the backend part rather than frontend.`
-
 ## API details
   - ### `HomePage:` `localhost:5000/`
   - ### `Get Referral Code:`
