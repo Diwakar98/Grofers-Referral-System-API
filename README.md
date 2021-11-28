@@ -61,10 +61,10 @@ API for Referral System
 	- API which allows users to get their referral history and the incentives.
     	- Referral History API:: **`localhost:5000/get_referral_history?username=USERNAME&password=PASSWORD`**
     	- Details:
-	   	- It first checks if the username and password are valid or else shows an error.
-	  	- It shows the email id and their incentives which have registered using the user's referral code.
-	  	- If the user enters invalid userid, it shows error
-	  	- Return the JSON response: 
+		- It first checks if the username and password are valid or else shows an error.
+		- It shows the email id and their incentives which have registered using the user's referral code.
+		- If the user enters invalid userid, it shows error
+		- Return the JSON response: 
 	      	{
 			'email1@xyz.com' : 100,
 			'email2@xyz.com' : 100,
