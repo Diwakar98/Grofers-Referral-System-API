@@ -1,7 +1,7 @@
 # Grofers-Referral-System-API
 API for Referral System
 
-# Functionalities:
+## Functionalities:
   - Registration of User
   - Enrolment into Referral System
   - Withdraw from Referral System
@@ -9,3 +9,13 @@ API for Referral System
   - Give incentives if registered using referral code
   - Show Referral history with masked email addresses.
   - Show milestone to get cash rewards
+
+## Framework Used: **NodeJS**
+## Database Used: **Firebase Database**
+
+## How to run:
+  - Install NodeJS
+  - Type 'npm run dev' in Command Prompt/Linux Terminal.
+  - Search ‘localhost:5000’ in the browser.
+
+
