@@ -49,38 +49,66 @@ API for Referral System
            }
       - **app.get('/show_referral_code',async (req,res)=>{ . . . }**
 
-  ### Register
-- API which allows users to sign up with referral code and give incentives to both referee and referred user.
-- Give Rs. 100 incentive to both the register user and the referee if registered using Referral Code.
-
-- SignUp API: **localhost:5000/register**
-- Details:
-  - Get request page for registration of user
-  - It shows the registration form to be filled by user
-- **app.post('/register', (req,res) => { . . . }**
+  - ### Register
+	- API which allows users to sign up with referral code and give incentives to both referee and referred user.
+	- Give Rs. 100 incentive to both the register user and the referee if registered using Referral Code.
+	
+	- SignUp API: **localhost:5000/register**
+	- Details:
+  		- Get request page for registration of user
+  		- It shows the registration form to be filled by user
+	- **app.post('/register', (req,res) => { . . . }**
  
-  ### Get Referral History
-- API which allows users to get their referral history and the incentives.
-    - Referral History API:: **localhost:5000/get_referral_history?username=USERNAME&password=PASSWORD**
-    - Details:
-   	- It first checks if the username and password are valid or else shows an error.
-  	- It shows the email id and their incentives which have registered using the user's referral code.
-  	- If the user enters invalid userid, it shows error
-  	- Return the JSON response: 
-      	{
-		'email1@xyz.com' : 100,
-		'email2@xyz.com' : 100
-		'email3@xyz.com' : 100,
-		.
-		.
-		.
-      	}
+  - ### Get Referral History
+	- API which allows users to get their referral history and the incentives.
+    	- Referral History API:: **localhost:5000/get_referral_history?username=USERNAME&password=PASSWORD**
+    	- Details:
+	   	- It first checks if the username and password are valid or else shows an error.
+	  	- It shows the email id and their incentives which have registered using the user's referral code.
+	  	- If the user enters invalid userid, it shows error
+	  	- Return the JSON response: 
+	      	{
+			'email1@xyz.com' : 100,
+			'email2@xyz.com' : 100
+			'email3@xyz.com' : 100,
+			.
+			.
+			.
+	      	}
 
+	- **app.get('/get_referral_history',async (req,res)=>{ . . . }**
 
+  - ### Show Milestone
+  	- API which allows users to get the milestones.
+  	- Milestone API: **localhost:5000/show_milestone?username=USERNAME&password=PASSWORD**
+  	- Details:
+  		- It first checks if the username and password are valid or else shows an error.
+  		- Using this user can get to know about the number of users who have registered using his referral code.
+  		- If user enters invalid code it shows error.
+  	- **app.get('/show_milestone', async (req,res) => { . . . }**
+ 
+   - ### Enroll and Withdraw
+   	- API to enroll into the Referral System and withdraw from the ReferralSystem
+   	- Enroll API: **localhost:5000/enroll_into_referral?username=USERNAME&password=PASSWORD**
+   		- Details:
+	   		- Way to enroll into the Grofers Referral System.
+	   		- It first checks if the username and password are valid or else shows an error.
+	   		- If the username is valid and the user has already been enrolled then it shows message accordingly 
+	   		- Or else Enrolls the user and sends a JSON response having the username and his Referral Code.
+	   		- JSON Response Format:
+	   	 	{
+	            		'username' : 'root',
+	            		'referral' : 'abcdwxyz'
+	        	}
+		- **app.get('/enroll_into_referral',async (req,res)=>{ . . . }**
+	- Withdraw API: **localhost:5000/withdraw_from_referral?username=USERNAME&password=PASSWORD**
+		- Details:
+			- Way to withdraw from the Grofer's Referral System
+			- It first checks if the username and password are valid or else shows and error.
+			- If the username is valid and the user has already withdraw then it shows message accordingly 
+			- Or else withdraws the user and shows success.
+		- **app.get('/withdraw_from_referral',async (req,res)=>{ . . . }**
 
-- **app.get('/get_referral_history',async (req,res)=>{ . . . }**
-
-###
 
 
 
