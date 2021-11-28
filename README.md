@@ -49,39 +49,38 @@ API for Referral System
            }
       - **app.get('/show_referral_code',async (req,res)=>{ . . . }**
 
-  - ### Register
-      - API which allows users to sign up with referral code and give incentives to both referee and referred user.
-	    - Give Rs. 100 incentive to both the register user and the referee if registered using Referral Code.
-	   
-      - SignUp API: **localhost:5000/register**
-      - Details:
-          - Get request page for registration of user
-          - It shows the registration form to be filled by user
-      - **app.post('/register', (req,res) => { . . . }**
+  ### Register
+- API which allows users to sign up with referral code and give incentives to both referee and referred user.
+- Give Rs. 100 incentive to both the register user and the referee if registered using Referral Code.
+
+- SignUp API: **localhost:5000/register**
+- Details:
+  - Get request page for registration of user
+  - It shows the registration form to be filled by user
+- **app.post('/register', (req,res) => { . . . }**
  
-  - ### Get Referral History
-      - API which allows users to get their referral history and the incentives.
-	    - Referral History API:: **localhost:5000/get_referral_history?username=USERNAME&password=PASSWORD**
-      - Details:
-          - It first checks if the username and password are valid or else shows an error.
-          - It shows the email id and their incentives which have registered using the user's referral code.
-          - If the user enters invalid userid, it shows error
-          - Return the JSON response: 
-              {
-                `'email1@xyz.com'` : 100,
-                `'email2@xyz.com'` : 100
-                `'email3@xyz.com'` : 100,
-                .
-                .
-                .
-              }
+  ### Get Referral History
+- API which allows users to get their referral history and the incentives.
+    - Referral History API:: **localhost:5000/get_referral_history?username=USERNAME&password=PASSWORD**
+    - Details:
+   	- It first checks if the username and password are valid or else shows an error.
+  	- It shows the email id and their incentives which have registered using the user's referral code.
+  	- If the user enters invalid userid, it shows error
+  	- Return the JSON response: 
+      	{
+		'email1@xyz.com' : 100,
+		'email2@xyz.com' : 100
+		'email3@xyz.com' : 100,
+		.
+		.
+		.
+      	}
 
 
 
-      - **app.get('/get_referral_history',async (req,res)=>{ . . . }**
+- **app.get('/get_referral_history',async (req,res)=>{ . . . }**
 
-
-
+###
 
 
 
