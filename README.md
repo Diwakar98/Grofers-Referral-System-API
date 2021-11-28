@@ -86,7 +86,7 @@ API for Referral System
   	
   - ### `Enroll and withdraw`
   	- API to enroll into the Referral System and withdraw from the ReferralSystem
-  	- Enroll API: **`localhost:5000/enroll_into_referral?username=USERNAME&password=PASSWORD`**
+  	- **Enroll API**: **`localhost:5000/enroll_into_referral?username=USERNAME&password=PASSWORD`**
   		- Details:
 	  		- Way to enroll into the Grofers Referral System.
 			- It first checks if the username and password are valid or else shows an error.
@@ -99,7 +99,7 @@ API for Referral System
 			}
 		- **`app.get('/enroll_into_referral',async (req,res)=>{ . . . }`**
 	
-	- Withdraw API: **`localhost:5000/withdraw_from_referral?username=USERNAME&password=PASSWORD`**
+	- **Withdraw API**: **`localhost:5000/withdraw_from_referral?username=USERNAME&password=PASSWORD`**
 		- Details:
 			- Way to withdraw from the Grofer's Referral System
 			- It first checks if the username and password are valid or else shows and error.
