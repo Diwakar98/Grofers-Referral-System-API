@@ -10,8 +10,8 @@ API for Referral System
   - Show Referral history with masked email addresses.
   - Show milestone to get cash rewards.
 
-## Framework Used: ***`NodeJS`***
-## Database Used: ***`Firebase Readtime Database`***
+## Framework Used: `NodeJS`
+## Database Used: `Firebase Readtime Database`
 
 ## How to run:
   - Install NodeJS
