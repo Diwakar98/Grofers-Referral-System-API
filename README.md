@@ -1,7 +1,7 @@
 # Grofers-Referral-System-API
 API for Referral System
 
-## Functionalities:
+## `Functionalities:`
   - Registration of User.
   - Enrolment into Referral System.
   - Withdraw from Referral System.
@@ -10,29 +10,29 @@ API for Referral System
   - Show Referral history with masked email addresses.
   - Show milestone to get cash rewards.
 
-## Framework Used: `NodeJS`
-## Database Used: `Firebase Readtime Database`
+## `Framework Used:` NodeJS
+## `Database Used:` Firebase Readtime Database
 
-## How to run:
+## `How to run:`
   - Install NodeJS
   - Type 'npm run dev' in Command Prompt/Linux Terminal.
   - Search `localhost:5000` in the browser.
 
-## Libraries Used:
+## `Libraries Used:`
   - Express: To make a web application.
   - Referral-code-generator: To generate referral code for registered users.
   - Mask-email-phone : To mask the email addresses.
   - Firebase-admin: To connect to Google’s Firebase Database.
   
-## Assumptions:
+## `Assumptions:`
   - We make an assumption that the referral code being generated using the referral code generator is always unique. Although we can extend the implementation to always make a unique referral code.
   - The code runs on a local machine. Although the database we are using if Google’ FIrebase database and it is a global realtime database. We can deploy the code on a server to access globally.
 
-### Note: Focused mostly on the backend part rather than frontend.
+### `Note: Focused mostly on the backend part rather than frontend.`
 
 ## API details
-  - ### HomePage: `localhost:5000/`
-  - ### Get Referral Code
+  - ### `HomePage:` `localhost:5000/`
+  - ### `Get Referral Code:`
       - To get the personalized referral code for the user. Users can get this Code and share on Social Media platforms etc.
       - Users have to first register before getting the referral code.
       - For already registered users to get their referral code:
@@ -49,7 +49,7 @@ API for Referral System
            }
       - **`app.get('/show_referral_code',async (req,res)=>{ . . . }`**
 
-  - ### Register
+  - ### `Register`
 	- API which allows users to sign up with referral code and give incentives to both referee and referred user.
 	- Give Rs. 100 incentive to both the register user and the referee if registered using Referral Code.
 	
@@ -59,7 +59,7 @@ API for Referral System
   		- It shows the registration form to be filled by user
 	- **`app.post('/register', (req,res) => { . . . }`**
  
-  - ### Get Referral History
+  - ### `Get Referral History`
 	- API which allows users to get their referral history and the incentives.
     	- Referral History API:: **`localhost:5000/get_referral_history?username=USERNAME&password=PASSWORD`**
     	- Details:
@@ -78,7 +78,7 @@ API for Referral System
 
 	- **`app.get('/get_referral_history',async (req,res)=>{ . . . }`**
 
-  - ### Show Milestone
+  - ### `Show Milestone`
   	- API which allows users to get the milestones.
   	- Milestone API: **`localhost:5000/show_milestone?username=USERNAME&password=PASSWORD`**
   	- Details:
@@ -87,7 +87,7 @@ API for Referral System
   		- If user enters invalid code it shows error.
   	- **`app.get('/show_milestone', async (req,res) => { . . . }`**
   	
-  - ### Enroll and withdraw
+  - ### `Enroll and withdraw`
   	- API to enroll into the Referral System and withdraw from the ReferralSystem
   	- Enroll API: **`localhost:5000/enroll_into_referral?username=USERNAME&password=PASSWORD`**
   		- Details:
