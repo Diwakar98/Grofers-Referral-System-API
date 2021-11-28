@@ -2,20 +2,37 @@
 API for Referral System
 
 ## Functionalities:
-  - Registration of User
-  - Enrolment into Referral System
-  - Withdraw from Referral System
+  - Registration of User.
+  - Enrolment into Referral System.
+  - Withdraw from Referral System.
   - Get Referral code which can be shared on social media platforms.
-  - Give incentives if registered using referral code
+  - Give incentives if registered using referral code.
   - Show Referral history with masked email addresses.
-  - Show milestone to get cash rewards
+  - Show milestone to get cash rewards.
 
-## Framework Used: **NodeJS**
-## Database Used: **Firebase Database**
+## Framework Used: ***NodeJS***
+## Database Used: ***Firebase Readtime Database***
 
 ## How to run:
   - Install NodeJS
   - Type 'npm run dev' in Command Prompt/Linux Terminal.
-  - Search ‘localhost:5000’ in the browser.
+  - Search 'localhost:5000' in the browser.
+
+## Libraries Used:
+  - Express: To make a web application.
+  - Referral-code-generator: To generate referral code for registered users.
+  - Mask-email-phone : To mask the email addresses.
+  - Firebase-admin: To connect to Google’s Firebase Database.
+  
+## Assumptions:
+  - We make an assumption that the referral code being generated using the referral code generator is always unique. Although we can extend the implementation to always make a unique referral code.
+  - The code runs on a local machine. Although the database we are using if Google’ FIrebase database and it is a global realtime database. We can deploy the code on a server to access globally.
+
+#### Note: Focused mostly on the backend part rather than frontend.
+
+
+
+
+
 
 
