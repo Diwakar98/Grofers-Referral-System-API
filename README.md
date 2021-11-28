@@ -86,10 +86,9 @@ API for Referral System
   		- Using this user can get to know about the number of users who have registered using his referral code.
   		- If user enters invalid code it shows error.
   	- **app.get('/show_milestone', async (req,res) => { . . . }**
- 
-   - ### Enroll and Withdraw
-   	- API to enroll into the Referral System and withdraw from the ReferralSystem
-   	
+  	
+  - ### Enroll and withdraw
+  	- API to enroll into the Referral System and withdraw from the ReferralSystem
 
 
 
