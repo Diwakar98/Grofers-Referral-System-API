@@ -68,9 +68,9 @@ API for Referral System
           - If the user enters invalid userid, it shows error
           - Return the JSON response: 
               {
-                'email1@xyz.com' : 100,
-                'email2@xyz.com' : 100
-                'email3@xyz.com' : 100,
+                `'email1@xyz.com'` : 100,
+                `'email2@xyz.com'` : 100
+                `'email3@xyz.com'` : 100,
                 .
                 .
                 .
