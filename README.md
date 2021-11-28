@@ -67,8 +67,7 @@ API for Referral System
 	  	- Return the JSON response: 
 	      	{
 			'email1@xyz.com' : 100,
-			'email2@xyz.com' : 100
-			'email3@xyz.com' : 100,
+			'email2@xyz.com' : 100,
 			.
 			.
 			.
