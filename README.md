@@ -36,7 +36,16 @@ API for Referral System
       - To get the personalized referral code for the user. Users can get this Code and share on Social Media platforms etc.
       - Users have to first register before getting the referral code.
       - For already registered users to get their referral code:
-
+      - API: localhost:5000/show_referral_code?username=USERNAME&password=PASSWORD
+      - Details:
+          - Way to get user's referral code using username
+          - It first checks if the username and password are valid or else shows an error.
+          - Or else return JSON response having username and it's referral code
+          - JSON Response Format:
+           {
+              'username' : 'root',
+              'referral' : 'abcdwxyz'
+           }
 
 
 
