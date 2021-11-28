@@ -89,6 +89,12 @@ API for Referral System
   	
   - ### Enroll and withdraw
   	- API to enroll into the Referral System and withdraw from the ReferralSystem
+  	- Enroll API: **localhost:5000/enroll_into_referral?username=USERNAME&password=PASSWORD**
+  	- Details:
+  		- Way to enroll into the Grofers Referral System.
+		- It first checks if the username and password are valid or else shows an error.
+		- If the username is valid and the user has already been enrolled then it shows message accordingly 
+		- Or else Enrolls the user and sends a JSON response having the username and his Referral Code.
 
 
 
